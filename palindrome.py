@@ -1,3 +1,6 @@
+import re
+
+
 # Functions
 
 # Takes a string and returns True if the string is a palindrome.
@@ -15,6 +18,11 @@ def palindrome_check_recursive(string_):
     print("First and last characters are different.")
     return False
 
+# Takes a string and returns all of the letters in lower case.
+def reformat(string_):
+    string_ = re.sub(r'[^A-Za-z]','',string_)
+    string_ = string_.lower()
+    return string_
 
 
 # Get user input.
