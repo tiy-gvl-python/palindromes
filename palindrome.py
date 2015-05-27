@@ -46,12 +46,18 @@ if not potential_palindrome_input:
 # Remove spaces, punctuation, and capitalization from the input
 potential_palindrome = reformat(potential_palindrome_input)
 
-# Algorithm
-is_a_palindrome = palindrome_check_recursive(potential_palindrome)
+# Algorithms
+is_a_palindrome_recursive = palindrome_check_recursive(potential_palindrome)
 is_a_palindrome = palindrome_check(potential_palindrome)
-is_a_palindrome = palindrome_check_iterative(potential_palindrome)
+is_a_palindrome_iterative = palindrome_check_iterative(potential_palindrome)
 
-if is_a_palindrome:
+if (is_a_palindrome and
+    is_a_palindrome_iterative and
+    is_a_palindrome_recursive):
     print("{} is a palindrome.".format(potential_palindrome_input))
-else:
+elif (not is_a_palindrome and
+    not is_a_palindrome_iterative and
+    not is_a_palindrome_recursive):
     print("{} is not a palindrome.".format(potential_palindrome))
+else:
+    print("Had an inconsistent answer.")
