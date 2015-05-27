@@ -1,6 +1,6 @@
 # Functions
 
-
+# Takes a string and returns True if the string is a palindrome.
 def palindrome_check(string_):
     if len(string_) < 2:
         return True
