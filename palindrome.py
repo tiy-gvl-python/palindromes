@@ -2,7 +2,6 @@ import re
 
 
 # Functions
-
 # Prints string_
 def print_string(string_):
     print("Current string: {}".format(string_))
@@ -24,10 +23,12 @@ def reformat(string_):
     print_string(string_)
     return string_
 
+# Takes a string and returns True if the string is a palindrome.
 def palindrome_check(string_):
     print_string(string_[::-1])
     return string_ == string_[::-1]
 
+# Takes a string and returns True if the string is a palindrome.
 def palindrome_check_iterative(string_):
     for index, letter in enumerate(string_[::-1]):
         if letter == string_[index]:
@@ -35,6 +36,7 @@ def palindrome_check_iterative(string_):
         return False
     return True
 
+# Main program.
 # Get user input.
 potential_palindrome_input = input("Enter a string > ")
 print_string(potential_palindrome_input)
@@ -51,6 +53,7 @@ is_a_palindrome_recursive = palindrome_check_recursive(potential_palindrome)
 is_a_palindrome = palindrome_check(potential_palindrome)
 is_a_palindrome_iterative = palindrome_check_iterative(potential_palindrome)
 
+# Results
 if (is_a_palindrome and
     is_a_palindrome_iterative and
     is_a_palindrome_recursive):
@@ -58,6 +61,6 @@ if (is_a_palindrome and
 elif (not is_a_palindrome and
     not is_a_palindrome_iterative and
     not is_a_palindrome_recursive):
-    print("{} is not a palindrome.".format(potential_palindrome))
+    print("{} is not a palindrome.".format(potential_palindrome_input))
 else:
     print("Had an inconsistent answer.")
