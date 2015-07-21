@@ -1,7 +1,7 @@
 # Check for Palindrome
 import re
 
-pal_input = input("Enter any word or sentence (using quotes) to see if it is a Palindrome.  ")
+pal_input = input("Enter any word or sentence to see if it is a Palindrome.  ")
 print(pal_input)
 pal_input = re.sub(r'[^A-Za-z]', "", pal_input.lower())
 print(pal_input)
