@@ -1,3 +1,4 @@
+Learned about string munipulation.
 # Determine if text is palindromic
 #Changed
 ## Description
