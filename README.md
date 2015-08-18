@@ -1,4 +1,7 @@
-# Determine if text is palindromic
+# Run palindrom.py using Python3
+
+
+## Determine if text is palindromic
 
 ## Description
 
@@ -46,10 +49,6 @@ Letter casing and punctuation do not matter when testing a palindrome. All of th
 * Lisa Bonet ate no basil.
 * A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal: Panama!
 * Doc, note, I dissent. A fast never prevents a fatness. I diet on cod.
-
-## Hard Mode
-
-Make both an iterative and recursive version of your palindrome test function.
 
 ## Notes
 
