@@ -1,19 +1,17 @@
 import re
 
 text = input("Your text: ")
-regex_text = re.sub(r'[^A-Za-z]', "", text).lower()
-bward_text = regex_text[::-1]
-elist = []
-etup = len(regex_text)
-for i in range(etup):
-    if bward_text[i] == regex_text[i]:
-        elist.append(1)
+regex_text = re.sub(r'[^A-Za-z\s]', "", text).lower()
+backward_text = regex_text[::-1]
+empty_list = []
+text_length = len(regex_text)
+for i in range(text_length):
+    if backward_text[i] == regex_text[i]:
+        empty_list.append(1)
     else:
-        elist.append(0)
-        
-print(elist)
+        empty_list.append(0)
 
-if 0 in elist:
+if 0 in empty_list:
     print("is not a palindrome")
 else:
     print("is a palindrome")
