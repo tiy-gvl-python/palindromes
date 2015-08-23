@@ -2,27 +2,9 @@
 
 ## Description
 
-Write a program that asks the user for one or more sentences and then lets the user know if it is a palindrome.
+A program that asks the user for one or more sentences and then lets the user know if it is a palindrome.
 
-## Objectives
-
-### Learning Objectives
-
-After completing this assignment, you should understand:
-
-* Manipulating strings
-* How strings are related to lists
-* Recursion
-
-### Performance Objectives
-
-After completing this assignment, you should be able to:
-
-* Strip characters out of strings
-* Change the case of strings
-* Look at substrings
-
-## Details
+## Assignment Details
 
 ### Deliverables
 
