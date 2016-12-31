@@ -1,4 +1,4 @@
-Learned about string munipulation.
+Learned about string manipulation.
 # Determine if text is palindromic
 #Changed
 ## Description
